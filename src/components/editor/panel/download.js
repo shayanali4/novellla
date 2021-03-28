@@ -7,6 +7,7 @@ import $ from 'jquery';
  */
 
 import { BsDownload } from 'react-icons/bs';
+import { serverHost } from '../../../SeverConstants';
 
 /**
  * Get contents.
@@ -72,7 +73,7 @@ function Download(props) {
     let data = { type: type, data: blocks };
 
     axios
-      .post('/api/files', data)
+      .post(`${serverHost}/api/files`, data)
       .then(res => {
         let data = res.data;
         if (!data.success) throw data;

@@ -18,6 +18,7 @@ import EditorContext from '../context';
 // Icons
 import { HiOutlineTrash } from 'react-icons/hi';
 import { VscBook } from 'react-icons/vsc';
+import { serverHost } from '../../../SeverConstants';
 
 /**
  * Type Box.
@@ -98,7 +99,7 @@ function SpellCheck(props) {
     }
 
     axios
-      .post('/api/spell', { blocks: blocks, whitelist: typo.whitelist })
+      .post(`${serverHost}/api/spell`, { blocks: blocks, whitelist: typo.whitelist })
       .then(({ data: response }) => {
         if (response.success) {
           setTypo(docs => ({
