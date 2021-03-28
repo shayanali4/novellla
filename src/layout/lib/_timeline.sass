@@ -1,0 +1,79 @@
+.timeline-box
+  position: fixed
+  height: 100vh
+  left: 0
+  top: 0
+  min-width: 300px
+  max-width: 300px
+  z-index: 999
+  overflow-x: scroll
+  transition: visibility 200s, opacity 200ms linear, background-color 600ms
+
+  &::-webkit-scrollbar
+    display: none
+
+.timeline-icon
+  position: fixed
+  min-width: 48px
+  max-width: 48px
+  height: 32px
+  border-radius: 15px
+  z-index: 999
+  top: 15px
+  left: 15px
+  transition: visibility 200s, opacity 200ms linear, background-color 600ms
+
+  .timeline-handler
+    border-radius: 15px
+    padding: 5px
+    width: 48px
+
+    > div
+      display: flex
+      justify-content: center
+      padding: 0
+
+      &:hover
+        background: none
+
+.timeline-handler
+  padding: 15px 0 10px
+  position: fixed
+  z-index: 9999
+  width: 100%
+  max-width: 300px
+  cursor: pointer
+  user-select: none
+  transition: visibility 200s, opacity 200ms linear, background-color 600ms, border-color 600ms
+
+
+  > div
+    display: grid
+    grid-template-columns: max-content 1fr
+    align-items: center
+    grid-gap: 10px
+    padding: 4px 15px
+
+.timeline-list
+  position: relative
+  padding: 15px
+  margin-top: 65px
+  padding: 0 15px 20px
+
+  > div
+    overflow: hidden
+    text-overflow: ellipsis
+    padding: 2px 0
+    cursor: pointer
+    opacity: .35
+
+    &.active,
+    &:hover
+      opacity: 1
+
+  span
+    white-space: nowrap
+
+  .section,
+  .chapter
+    font-weight: 700

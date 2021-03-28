@@ -1,0 +1,25 @@
+{
+  "short_name": "Novellla",
+  "name": "Create React App Sample",
+  "icons": [
+    {
+      "src": "favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "favicon-100x100.png",
+      "sizes": "100x100",
+      "type": "image/png"
+    },
+    {
+      "src": "favicon-950x950.png",
+      "sizes": "950x950",
+      "type": "image/png"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#444444",
+  "background_color": "#ffffff"
+}

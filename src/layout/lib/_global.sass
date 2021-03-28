@@ -1,0 +1,74 @@
+$text-color: #444444
+$main-font: Karla, Helvetica Neue, Helvetica, Arial, sans-serif
+
+*
+  padding: 0
+  margin: 0
+  box-sizing: border-box
+
+body
+  font-family: $main-font
+  color: $text-color
+  line-height: 22px
+  font-size: 16px
+  overflow-y: scroll
+
+  &::-webkit-scrollbar
+    width: 7px
+    background: #fafafa
+    position: absolute
+
+    &:hover
+      background: #efefef
+
+  &::-webkit-scrollbar-thumb
+    background: #888
+    border-radius: 6px
+
+#root
+  position: relative
+
+  > div
+    min-height: 100vh
+
+p
+  font-family: $main-font
+  color: $text-color
+  margin-bottom: 20px
+
+button
+  border: 1px solid transparent
+  font-family: Karla
+  cursor: pointer
+  position: relative
+  overflow: hidden
+  outline: none
+  transition: all .2s ease-in
+  margin-top: 20px
+
+  &:hover
+    &:before
+      content: ''
+      position: absolute
+      width: 100%
+      height: 100%
+      background: rgba(255, 255, 255, .05)
+      top: 0
+      left: 0
+
+input
+  padding: 8px 12px
+  border: 2px solid transparent
+  outline: none
+  font-family: $main-font
+  font-size: 16px
+  border-radius: 5px
+
+textarea
+  padding: 8px 10px
+  border: 2px solid transparent
+  outline: none
+  font-family: Karla
+  font-size: 16px
+  border-radius: 5px
+  resize: none

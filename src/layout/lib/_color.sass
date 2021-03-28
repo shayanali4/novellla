@@ -1,0 +1,779 @@
+// Bright mode
+$bright-bg: #fff
+$bright-bg-low: #fafafa
+$bright-text: #444
+$bright-text-low: rgba(0, 0, 0, .2)
+$bright-text-medium: rgba(0, 0, 0, .4)
+$bright-text-semi: rgba(0, 0, 0, .6)
+$bright-border: #f3f3f3
+$bright-shadow: rgba(96, 101, 123, .08)
+
+.bright-mode
+  ::selection
+    background: #d9eafe
+
+  p,
+  h1, h2, h3, h4, h5, h6
+    color: $bright-text
+
+  input,
+  textarea
+    border-color: $bright-border
+    background: $bright-bg-low
+    color: $bright-text
+
+    &:focus,
+    &:hover
+      background: $bright-bg
+
+  // Timeline
+  .timeline-box
+    box-shadow: 0 12px 48px 0 $bright-shadow
+    background: $bright-bg
+
+  .timeline-icon
+    box-shadow: 0 12px 48px 0 rgba(0, 0, 0, 0)
+
+    .timeline-handler
+      box-shadow: 0 4px 8px 0 rgba(96, 101, 123, 0.15)
+      color: $bright-text-low
+
+  .timeline-handler
+    border-bottom: 1px solid #f0f2fc
+
+    > div
+      &:hover
+        background: #f0f2fc
+        color: #4a6ee0
+
+  .timeline-box,
+  .type-box,
+  .notes-box
+    background: $bright-bg
+    color: $bright-text
+    border-color: $bright-border
+
+  // Editor
+  .public-DraftEditorPlaceholder-root
+    color: $bright-text
+
+  .type-panel
+    background: $bright-bg
+
+  // Sentence length
+  .sentence-box
+    > div
+      color: $bright-text
+
+      svg
+        color: $bright-text
+
+  // Spell Check
+  .spelling-box
+    background: $bright-bg
+    box-shadow: 0 6px 15px rgba(0, 0, 0, .10)
+
+  .spelling-action
+    > div
+      color: $bright-text-medium
+
+      svg
+        color: $bright-text-medium
+
+  .confirm-exit-fs
+    background: $bright-bg
+    box-shadow: 0 12px 20px 0 $bright-shadow
+
+  .panel-box
+    svg
+      color: $bright-text-low
+
+      &:hover
+        color: $bright-text-semi
+
+  .panel-popup
+    background: $bright-bg
+    box-shadow: 0 12px 20px 0 $bright-shadow
+
+  .panel-option
+    background: #6c757d
+    border-color: #6c757d
+
+    > div
+      &:hover
+        background: #545b62
+
+    .selected
+      background: #545b62
+
+  .shortcuts-list
+    border-color: #ddd
+
+    > div
+      border-color: #ddd
+
+      > div:last-child
+        border-color: #ddd
+
+  .setting-toggles
+    input
+      &:before
+        background: #f4f4f4
+        box-shadow: -3px 3px 3px rgba(0, 0, 0, .05) inset
+
+      &:after
+        border: 1px solid #ddd
+        background: #fff
+
+      &:checked
+        &:before
+          background: #cfff81
+
+  .popup-more
+    color: $bright-text
+
+  .focus-now
+    color: $bright-text-medium
+
+    &:hover
+      color: $bright-text
+
+  .focus-exit
+    border: 1px solid $bright-border
+    box-shadow: 0 5px 8px $bright-shadow
+
+  .story-structure-confirm
+    background: $bright-bg
+
+  .play-now
+    svg
+      color: $bright-text
+
+  .lightness-bar,
+  .volume-bar
+    background: #fff
+    border: 1px solid #ddd
+
+  .lightness-track,
+  .volume-track
+    background: #f8f8f8
+
+  // Find and replace
+  .find-and-replace
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .1)
+    background: $bright-bg
+
+  .find-box
+    border: 2px solid $bright-border
+    background: $bright-bg
+
+  .popup-cover
+    background: rgba(0, 0, 0, 0)
+
+  .popup-editor
+    background: #444444
+
+  .popup-text
+    background: $bright-bg
+    border-color: #efefef
+
+  .popup-link
+    input
+      background: $bright-bg
+
+  .word-count
+    span
+      background: $bright-bg
+
+    > div
+      color: $bright-text-medium
+
+  // Notes
+  .notes-icon
+    background: $bright-bg
+
+    .notes-handler
+      box-shadow: 0 4px 8px 0 rgba(96, 101, 123, 0.15)
+      color: $bright-text-low
+
+  .notes-handler
+    border-bottom: 1px solid #f0f2fc
+    background: $bright-bg
+
+    > div
+      &:hover
+        background: #f0f2fc
+        color: #4a6ee0
+
+  .notes-box
+    background: $bright-bg
+    box-shadow: -20px 0px 30px $bright-shadow
+
+  .note-list
+    &:not(:first-child)
+      &:before
+        border-color: #ddd
+
+    &:hover
+      > div
+        box-shadow: 0 0 0 2px rgb(99, 142, 235)
+        color: rgb(74, 110, 224)
+        background: rgb(240, 242, 252)
+        border-color: transparent
+
+      svg
+        color: #638eeb
+
+    > div
+      background: $bright-bg
+      border: 2px solid #ddd
+
+    svg
+      color: #dddddd
+
+  .sorting
+    box-shadow: 0 0 0 2px $bright-border
+
+  .toggle-note
+    svg
+      color: #638eeb!important
+
+  .note-min
+    &:before
+      border-color: #f3f3f3
+      background: #fdfdfd
+
+  .note-editor
+    > div:last-child
+      > div:last-child
+        color: $bright-text-low
+
+        &:hover
+          color: $bright-text
+
+  .delete-note-confirm
+    background: rgba(0, 0, 0, .6)
+
+    > div
+      background: $bright-bg
+
+// Dark mode
+$darkmode-bg: #1C1C1C
+$darkmode-bg-medium: rgba(255, 255, 255, .2)
+$darkmode-bg-semi: rgba(255, 255, 255, .1)
+$darkmode-bg-low: rgba(255, 255, 255, .05)
+$darkmode-text: #BFBFBF
+$darkmode-border: rgb(39, 39, 39)
+$darkmode-shadow: rgba(0, 0, 0, .4)
+
+.dark-mode
+  ::selection
+    background: $darkmode-bg-low
+
+  p,
+  h1, h2, h3, h4, h5, h6
+    color: $darkmode-text
+
+  input,
+  textarea
+    border-color: $darkmode-border
+    background: $darkmode-bg-low
+    color: $darkmode-text
+
+    &:focus,
+    &:hover
+      background: $darkmode-bg
+
+  // Timeline
+  .timeline-box
+    box-shadow: 0 12px 48px 0  $darkmode-shadow
+    background: $darkmode-bg
+
+  .timeline-icon
+    box-shadow: none
+    background: none
+
+    .timeline-handler
+      box-shadow: 0 4px 8px 0 $darkmode-shadow
+
+  .timeline-handler
+    border-bottom: 1px solid #272727
+
+    > div
+      color: rgba(255, 255, 255, .4)
+
+      &:hover
+        background: $darkmode-bg-low
+        color: rgba(255, 255, 255, .8)
+
+  .timeline-box,
+  .type-box,
+  .notes-box
+    background: $darkmode-bg
+    color: $darkmode-text
+    border-color: $darkmode-border
+
+  // Editor
+  .public-DraftEditorPlaceholder-root
+    color: $darkmode-text
+
+  .type-panel
+    background: $darkmode-bg
+
+  // Sentence length
+  .sentence-box
+    > div
+      color: $darkmode-text
+
+      svg
+        color: $darkmode-text
+
+  .sentence-guide
+    span
+      color: #525252
+
+  // Spell Check
+  .spelling-box
+    background: $darkmode-bg
+    box-shadow: 0 6px 15px $darkmode-shadow
+
+  .spelling-action
+    > div
+      color: $darkmode-text
+
+      svg
+        color: $darkmode-text
+
+  .confirm-exit-fs
+    background: $darkmode-bg
+    box-shadow: 0 12px 20px 0 $darkmode-shadow
+
+  .panel-box
+    svg
+      color: $darkmode-bg-medium
+
+      &:hover
+        color: $darkmode-text
+
+  .panel-popup
+    background: $darkmode-bg
+    box-shadow: 0 12px 20px 0 $darkmode-shadow
+
+  .panel-option
+    background: $darkmode-bg-low
+    // border-color: #6c757d
+
+    > div
+      &:hover
+        background: $darkmode-bg-semi
+
+    .selected
+      background: $darkmode-bg-medium
+
+  .shortcuts-list
+    border-color: $darkmode-border
+
+    > div
+      border-color: $darkmode-border
+
+      > div:last-child
+        border-color: $darkmode-border
+
+  .setting-toggles
+    input
+      &:before
+        background: #282828
+        box-shadow: -3px 3px 3px rgba(0, 0, 0, .3) inset
+
+      &:after
+        border: 1px solid #f2f2f2
+        background: #f2f2f2
+
+      &:checked
+        &:before
+          background: #4b6b17
+
+  .popup-more
+    color: $darkmode-text
+
+  .focus-now
+    color: $darkmode-bg-medium
+
+    &:hover
+      color: $darkmode-text
+
+  .focus-exit
+    border: 1px solid $darkmode-border
+    box-shadow: 0 5px 8px $darkmode-shadow
+
+  .story-structure-confirm
+    background: $darkmode-bg
+
+  .play-now
+    svg
+      color: $darkmode-text
+
+  .lightness-bar,
+  .volume-bar
+    background: #333
+    border-color: $darkmode-bg-low
+
+  .lightness-track,
+  .volume-track
+    background: $darkmode-bg-low
+
+  // Find and replace
+  .find-and-replace
+    box-shadow: 0 5px 15px $darkmode-shadow
+    background: $darkmode-bg
+
+  .find-box
+    border: 2px solid $darkmode-border
+    background: $darkmode-bg
+
+  .popup-cover
+    background: rgba(0, 0, 0, 0)
+
+  .popup-editor
+    background: #444444
+
+  .popup-text
+    background: #444444
+    border-color: rgba(255, 255, 255, .2)
+
+  .popup-link
+    input
+      background: $darkmode-bg
+
+  .word-count
+    span
+      background: $darkmode-bg
+
+    > div
+      color: $darkmode-text
+
+  // Notes
+  .notes-icon
+    background: $darkmode-bg
+
+    .notes-handler
+      box-shadow: 0 4px 8px 0 $darkmode-shadow
+      border-color: #1C1C1C
+
+  .notes-handler
+    border-bottom: 1px solid $darkmode-border
+    color: #627171
+    background: $darkmode-bg
+
+    > div
+      &:hover
+        background: $darkmode-bg-low
+        color: $darkmode-text
+
+  .notes-box
+    background: $darkmode-bg
+    box-shadow: -20px 0px 30px rgba(0, 0, 0, .3)
+
+  .note-list:not(.sub-note)
+    background: $darkmode-bg
+
+  .note-list
+    background: $darkmode-bg
+
+    &:not(:first-child)
+      &:before
+        border-color: $darkmode-border
+
+    &:hover
+      > div
+        box-shadow: 0 0 0 2px $darkmode-bg-low
+        background: $darkmode-bg-low
+        color: $darkmode-text
+
+      svg
+        color: $darkmode-text
+
+    > div
+      background: $darkmode-bg
+      border: 2px solid $darkmode-border
+
+    svg
+      color: $darkmode-bg-semi
+
+  .note-editor
+    > div:last-child
+      > div:last-child
+        color: $darkmode-bg-low
+
+        &:hover
+          color: $darkmode-text
+
+  .sorting
+    box-shadow: 0 0 0 2px $darkmode-border
+
+  .toggle-note
+    svg
+      color: #638eeb!important
+
+  .note-min
+    &:before
+      border-color: $darkmode-border
+
+  .delete-note-confirm
+    background: rgba(0, 0, 0, .6)
+
+    > div
+      background: $darkmode-bg
+
+// Color mode
+$color-bg-bold: rgba(0, 0, 0, .22)
+$color-bg-medium: rgba(0, 0, 0, .12)
+$color-bg-semi: rgba(0, 0, 0, .08)
+$color-bg-low: rgba(0, 0, 0, .04)
+$color-text: #666
+$color-border: rgba(0, 0, 0, .04)
+$color-shadow: rgba(0, 0, 0, .1)
+
+.color-mode
+  ::selection
+    background: rgba(56, 119, 195, 1)
+    color: #444
+
+  p,
+  h1, h2, h3, h4, h5, h6
+    color: $color-text
+
+  input,
+  textarea
+    border-color: $color-border
+    background: $color-bg-low
+    color: $color-text
+
+    &:focus,
+    &:hover
+      background: var(--base-color)
+
+  // Timeline
+  .timeline-box
+    box-shadow: 0 12px 48px 0  $color-shadow
+    background: var(--base-color)
+
+  .timeline-icon
+    box-shadow: none
+
+    .timeline-handler
+      box-shadow: 0 4px 8px 0 $color-shadow
+
+  .timeline-handler
+    border-bottom: 1px solid $color-border
+
+    > div
+      color: $color-text
+
+      &:hover
+        background: $color-bg-low
+
+  .timeline-box,
+  .type-box,
+  .notes-box
+    background: var(--base-color)
+    color: $color-text
+    border-color: $color-border
+
+  // Editor
+  .public-DraftEditorPlaceholder-root
+    color: $color-text
+
+  .type-panel
+    background: var(--base-color)
+
+  // Sentence length
+  .sentence-box
+    > div
+      color: $color-text
+
+      svg
+        color: $color-text
+
+  // Spell Check
+  .spelling-box
+    background: var(--base-color)
+    box-shadow: 0 6px 15px rgba(0, 0, 0, .15)
+
+  .spelling-action
+    > div
+      color: $color-text
+
+      svg
+        color: $color-text
+
+  .confirm-exit-fs
+    background: var(--base-color)
+    box-shadow: 0 12px 20px 0 $color-shadow
+
+  .panel-box
+    svg
+      color: $color-bg-medium
+
+      &:hover
+        color: $color-text
+
+  .panel-popup
+    background: var(--base-color)
+    box-shadow: 0 12px 20px 0 $color-shadow
+
+  .panel-option
+    background: $color-bg-semi
+
+    > div
+      &:hover
+        background: $color-bg-medium
+
+    .selected
+      background: $color-bg-medium
+
+  .shortcuts-list
+    border-color: $color-border
+
+    > div
+      border-color: $color-border
+
+      > div:last-child
+        border-color: $color-border
+
+  .setting-toggles
+    input
+      &:before
+        // background: var(--base-color)
+        background: rgba(0, 0, 0, .05)
+        box-shadow: -3px 3px 3px rgba(0, 0, 0, .1) inset
+
+      &:after
+        border: 1px solid #fff
+        background: #fff
+
+      &:checked
+        &:before
+          background: #90cc30
+
+  .popup-more
+    color: $color-text
+
+  .focus-now
+    color: $color-bg-medium
+
+    &:hover
+      color: $color-text
+
+  .focus-exit
+    border: 1px solid $color-border
+    box-shadow: 0 5px 8px $color-shadow
+
+  .story-structure-confirm
+    background: var(--base-color)
+
+  .play-now
+    svg
+      color: $color-text
+
+  .color-opt
+    svg:not(:first-child)
+      box-shadow: 0 0 0 2px rgba(0, 0, 0, .04)
+      border-radius: 100%
+
+  .lightness-bar,
+  .volume-bar
+    background: #fafafa
+    border-color: $color-bg-low
+
+  .lightness-track,
+  .volume-track
+    background: $color-bg-low
+
+  // Find and replace
+  .find-and-replace
+    box-shadow: 0 5px 15px $color-shadow
+    background: var(--base-color)
+
+  .find-box
+    border: 2px solid $color-border
+    background: var(--base-color)
+
+  .word-count
+    span
+      background: var(--base-color)
+
+    > div
+      color: $color-text
+
+  // Notes
+  .notes-icon
+    background: var(--base-color)
+
+    .notes-handler
+      box-shadow: 0 4px 8px 0 $color-shadow
+
+  .notes-handler
+    border-bottom: 1px solid $color-border
+    background: var(--base-color)
+
+    > div
+      &:hover
+        background: $color-bg-low
+        color: $color-text
+
+  .notes-box
+    background: var(--base-color)
+    box-shadow: -20px 0px 30px $color-shadow
+
+  .note-list:not(.sub-note)
+    background: var(--base-color)
+
+  .note-list
+    background: var(--base-color)
+
+    &:not(:first-child)
+      &:before
+        border-color: $color-border
+
+    &:hover
+      > div
+        box-shadow: 0 0 0 2px $color-bg-low
+        background: $color-bg-low
+        color: $color-text
+
+      svg
+        color: $color-text
+
+    > div
+      background: $color-bg-low
+      border: 2px solid $color-border
+
+    svg
+      color: $color-bg-medium
+
+  .note-editor
+    > div:last-child
+      > div:last-child
+        color: $color-bg-medium
+
+        &:hover
+          color: $color-text
+
+  .sorting
+    box-shadow: 0 0 0 2px $color-border
+
+  .toggle-note
+    svg
+      color: #888!important
+
+  .note-min
+    &:before
+      background: $color-bg-low
+      border-color: $color-border
+
+  .delete-note-confirm
+    background: $color-bg-bold
+
+    > div
+      background: var(--base-color)

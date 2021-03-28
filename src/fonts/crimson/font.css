@@ -1,0 +1,46 @@
+@font-face {
+  font-family: "Serif";
+  src: url("Crimson.eot");
+  src: url("Crimson.eot?#iefix") format("embedded-opentype"),
+    url("Crimson.svg#Crimson") format("svg"),
+    url("Crimson.ttf") format("truetype"), url("Crimson.woff") format("woff"),
+    url("Crimson.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Serif";
+  src: url("Crimson-Italic.eot");
+  src: url("Crimson-Italic.eot?#iefix") format("embedded-opentype"),
+    url("Crimson-Italic.svg#Crimson") format("svg"),
+    url("Crimson-Italic.ttf") format("truetype"),
+    url("Crimson-Italic.woff") format("woff"),
+    url("Crimson-Italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Serif";
+  src: url("Crimson-Bold.eot");
+  src: url("Crimson-Bold.eot?#iefix") format("embedded-opentype"),
+    url("Crimson-Bold.svg#Crimson") format("svg"),
+    url("Crimson-Bold.ttf") format("truetype"),
+    url("Crimson-Bold.woff") format("woff"),
+    url("Crimson-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Serif";
+  src: url("Crimson-Bold-Italic.eot");
+  src: url("Crimson-Bold-Italic.eot?#iefix") format("embedded-opentype"),
+    url("Crimson-Bold-Italic.svg#Crimson") format("svg"),
+    url("Crimson-Bold-Italic.ttf") format("truetype"),
+    url("Crimson-Bold-Italic.woff") format("woff"),
+    url("Crimson-Bold-Italic.woff2") format("woff2");
+  font-weight: 700;
+  font-style: italic;
+}

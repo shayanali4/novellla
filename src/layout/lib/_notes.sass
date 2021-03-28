@@ -1,0 +1,266 @@
+.notes-box
+  position: fixed
+  top: 0
+  right: 0
+  height: 100%
+  min-width: 300px
+  max-width: 300px
+  overflow-x: scroll
+  z-index: 999
+  transition: visibility 200s, opacity 200ms linear, background-color 600ms
+
+  &::-webkit-scrollbar
+    display: none
+
+.notes-icon
+  position: fixed
+  right: 15px
+  z-index: 999
+  top: 15px
+  width: 56px
+
+  .notes-handler
+    border-radius: 15px
+    padding: 5px
+    width: 48px
+
+    > div
+      display: flex
+      justify-content: center
+      padding: 0
+
+      &:hover
+        background: none
+
+.notes-handler
+  padding: 15px 0 10px
+  position: fixed
+  width: 100%
+  cursor: pointer
+  user-select: none
+  z-index: 9999
+
+  > div
+    display: grid
+    grid-template-columns: max-content 1fr
+    align-items: center
+    grid-gap: 10px
+    padding: 4px 15px
+
+    &:hover
+      // background: rgb(240, 242, 252)
+      // color: rgb(74, 110, 224)
+
+.notes-wrap
+  position: relative
+  margin-top: 65px
+
+.notes-list
+  position: relative
+  display: grid
+  grid-row-gap: 12px
+  margin-left: 10px
+  margin-right: 10px
+
+  .ui-sortable-placeholder.sorting
+    visibility: visible!important
+
+  .dragging
+    position: relative
+
+    &::before
+      display: none!important
+
+  > div
+    display: grid
+    grid-row-gap: 10px
+    position: relative
+
+  > div:first-child
+    margin-top: 10px
+
+  > div:last-child
+    margin-bottom: 20px
+
+.be-child
+  &:before
+    width: 231px!important
+
+  > div
+    margin-left: 40px
+
+    &:before
+      display: none
+
+.note-list:not(.sub-note)
+  position: relative
+  z-index: 999
+  border-radius: 5px
+
+.note-list
+  margin-left: 5px
+  margin-right: 5px
+  font-size: 15px
+  user-select: none
+
+  &:hover
+    > div
+      cursor: pointer
+
+      > div:last-child
+        opacity: .8
+
+  &:first-child
+    position: relative
+    z-index: 10
+
+  &:not(:first-child)
+    margin-left: 40px
+    position: relative
+    z-index: 6
+
+    &:before
+      content: ''
+      position: absolute
+      border-left: 2px solid #ddd
+      border-bottom: 2px solid #ddd
+      width: 15px
+      height: 45px
+      left: -15px
+      top: -30px
+
+  &.sorting
+    &:before
+      display: none
+
+  > div
+    position: relative
+    display: grid
+    grid-template-columns: max-content minmax(100px, 225px) 15px
+    grid-gap: 6px
+    align-items: center
+    padding: 5px 8px 5px 10px
+    border-radius: 5px
+
+    div
+      display: flex
+      align-items: center
+
+    div:last-child
+      opacity: .6
+
+  span
+    width: 200px
+    white-space: nowrap
+    overflow: hidden
+    text-overflow: ellipsis
+
+  .note-content
+    overflow: hidden
+    text-overflow: ellipsis
+
+.toggle-note
+  position: absolute
+  left: -10px
+
+.note-min
+  position: relative
+
+  &:before
+    content: ''
+    position: absolute
+    border: 2px solid transparent
+    border-top: none
+    width: 266px
+    right: 0
+    height: 10px
+    bottom: -4px
+    margin: auto 5px 2px
+    border-bottom-left-radius: 6px
+    border-bottom-right-radius: 6px
+
+  > div:first-child
+    margin-bottom: 5px
+
+  > div:not(:first-child)
+    display: none
+
+.note-editor
+  z-index: 1000
+  margin-bottom: 20px
+  padding: 0 15px 15px
+  margin-top: 65px
+
+  textarea, input
+    width: 100%
+    margin-bottom: 18px
+
+  textarea
+    min-height: 150px
+
+  label
+    font-size: 15px
+    display: block
+    margin-bottom: 4px
+
+  button
+    margin-top: 0
+
+  > div:last-child
+    display: flex
+    padding-top: 20px
+
+    div
+      display: flex
+      align-items: center
+
+      &:not(:last-child)
+        margin-right: 8px
+
+      &:last-child
+        color: rgba(0, 0, 0, .4)
+        cursor: pointer
+
+.delete-note-confirm
+  position: fixed
+  top: 0
+  left: 0
+  width: 100vw
+  min-height: 100vh
+  z-index: 9999
+  display: flex
+  justify-content: center
+  align-items: center
+
+  > div
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .08)
+    padding: 20px
+    max-width: 450px
+    border: 1px solid transparent
+    border-radius: 6px
+
+  p, h4
+    margin-bottom: 10px
+
+  .primary-btn
+    margin-right: 10px
+
+.note-list-control
+  padding: 20px 15px 50px
+  width: 100%
+  display: flex
+  align-items: center
+
+  button
+    margin-top: 0
+    margin-right: 10px
+
+  div
+    opacity: .3
+    cursor: pointer
+
+    &:hover
+      opacity: .7
+
+    &:active
+      transform: scale(.95)

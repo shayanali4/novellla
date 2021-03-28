@@ -1,0 +1,35 @@
+@font-face {
+  font-family: "Comic";
+  src: url("SFCartoonistHand.svg#SFCartoonistHand") format("svg"),
+    url("SFCartoonistHand.ttf") format("truetype"),
+    url("SFCartoonistHand.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Comic";
+  src: url("SFCartoonistHand-Italic.svg#SFCartoonistHand") format("svg"),
+    url("SFCartoonistHand-Italic.ttf") format("truetype"),
+    url("SFCartoonistHand-Italic.woff") format("woff");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Comic";
+  src: url("SFCartoonistHand-Bold.svg#SFCartoonistHand") format("svg"),
+    url("SFCartoonistHand-Bold.ttf") format("truetype"),
+    url("SFCartoonistHand-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Comic";
+  src: url("SFCartoonistHand-BoldItalic.svg#SFCartoonistHand") format("svg"),
+    url("SFCartoonistHand-BoldItalic.ttf") format("truetype"),
+    url("SFCartoonistHand-BoldItalic.woff") format("woff");
+  font-weight: 700;
+  font-style: italic;
+}
